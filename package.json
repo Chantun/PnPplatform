@@ -1,0 +1,36 @@
+{
+  "name": "pnp-platform",
+  "version": "1.0.0",
+  "description": "platform for sharing indie boardgames",
+  "main": "app.js",
+  "scripts": {
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chantun/PnPplatform.git"
+  },
+  "keywords": [
+    "print",
+    "play",
+    "platform",
+    "board",
+    "game",
+    "santiago"
+  ],
+  "author": "Santiago F. Rey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chantun/PnPplatform/issues"
+  },
+  "homepage": "https://github.com/Chantun/PnPplatform#readme",
+  "devDependencies": {
+    "lite-server": "^2.3.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.6",
+    "font-awesome": "^4.7.0"
+  }
+}
