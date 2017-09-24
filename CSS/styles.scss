@@ -1,0 +1,42 @@
+$grey: #292B2C;
+$orange: #BF3900;
+$breakpoint: 540px;
+
+body {
+    padding: 0px;
+    z-index: 0; 
+}
+
+@media (max-width: $breakpoint){
+ 
+    .smCollapse {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+}
+
+@media (min-width: $breakpoint) {
+
+    .ui {
+        position: absolute;
+        background: $grey;
+        color: ivory;
+        text-align: center;
+        width: 150px;
+        height: 100%;
+
+        .ui-item {
+            padding-top: 5px;
+        }
+    }
+
+    .smCollapse {
+        display: none;
+    }
+
+}
+
+a {
+    color: ivory;
+}

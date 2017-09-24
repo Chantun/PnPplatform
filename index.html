@@ -15,21 +15,46 @@
 <body>
     <!-- NAVBAR -->
     <nav class="navbar navbar-toggleable-sm navbar-inverse bg-inverse">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent, #vertMenu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand " href="#">GamePrinter</a>
+        <a class="navbar-brand mr-4" href="#">GamePrinter</a>
       
         <div class="collapse navbar-collapse " id="navbarSupportedContent">
             <form class="mr-3 my-auto d-inline w-100">
                     <input type="text" class="form-control" placeholder="Search..">
             </form>
+
+            <ul class="navbar-nav mr-auto smCollapse">
+                <li class="nav-item active smCollapse-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item smCollapse-item">
+                    <a class="nav-link" href="#">Browse</a>
+                </li>
+                <li class="nav-item smCollapse-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+            </ul>
             
             <button class="btn col-12 col-md-2" id="logBtn"><span class="fa fa-sign-in"></span>  Log-in</button>
 
         </div>
-      </nav>
+    </nav>
 
+
+    <div class="ui ui-menu " id="vertMenu">
+        <ul class="nav flex-column">
+            <li class="nav-item ui-item">
+                <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item ui-item">
+                <a class="nav-link" href="#">Browse</a>
+            </li>
+            <li class="nav-item ui-item">
+                <a class="nav-link" href="#">About</a>
+        </ul>
+    </div>
 
 
     <!-- scripts -->
