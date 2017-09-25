@@ -8,6 +8,8 @@ body {
     z-index: 0; 
 }
 
+/*A mixin to style the links*/
+
 @mixin link() {
     a {
         color: ivory;
@@ -22,7 +24,7 @@ body {
     }
 }
 
-/*Sm and xs screens:*/
+/* Media query Sm and xs screens:*/
 
 @media (max-width: $breakpoint){
  
@@ -37,9 +39,27 @@ body {
 
     @include link();
 
+    #cardGroup {
+        position: absolute;
+        margin: auto;
+        display: inline-flex;
+        height: 100%;
+        flex-wrap: wrap;
+        overflow: auto;
+    }
+
+    .gameCard {
+        display: flex;
+        width: 250px;
+        margin: auto;
+        margin-top: 40px;
+        border-color: $orange;
+    }
+
+
 }
 
-/*Lg to xl screens:*/
+/*Media query Lg to xl screens:*/
 
 @media (min-width: $breakpoint) {
 
@@ -49,7 +69,7 @@ body {
         color: ivory;
         text-align: center;
         width: 200px;
-        height: 100%;
+        height: 100% ;
         padding-top: 5px;
         border-top: 1px dashed $lt-grey; 
 
@@ -63,6 +83,23 @@ body {
     }
 
     @include link();
+
+    #cardGroup {
+        position: absolute;
+        margin-left: 200px;
+        display: inline-flex;
+        height: 100%;
+        flex-wrap: wrap;
+        overflow: auto;
+    }
+
+    .gameCard {
+        display: flex;
+        width: 250px;
+        margin-left: 40px;
+        margin-top: 40px;
+        border-color: $orange;
+    }
     
 }
 
@@ -78,25 +115,37 @@ body {
     
 }
 
-#cardGroup {
-    margin-left: 200px;
-    display: inline-flex;
-    flex-wrap: wrap;
-}
-
-.gameCard {
-    display: flex;
-    width: 267px;
-    margin-left: 50px;
-    margin-top: 40px;
-}
+/*This is a div holding the space for the image, on final version it will be an img*/
 
 #imgPlcHolder {
     display: flex;
-    width: 267px;
-    height: 150px;
+    width: 250px;
+    height: 140px;
     background: $lt-grey;
     color: ivory;
     justify-content: center;
     align-items: center;
+}
+
+/*This is a transparent <span> that took all over the cards, so it makes them a link*/
+
+#gameLnk {
+    position:absolute; 
+    width:100%;
+    height:100%;
+    top:0;
+    left: 0;
+    z-index: 1
+}
+
+.modal {
+   color: ivory;
+
+   .modal-header {
+       background: $grey;
+   }
+
+   .modal-footer {
+       background: $lt-grey;
+   }
 }
