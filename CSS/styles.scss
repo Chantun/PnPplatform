@@ -75,5 +75,28 @@ body {
 .btn {
     background: $orange;
     color: ivory;
+    
 }
 
+#cardGroup {
+    margin-left: 200px;
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+.gameCard {
+    display: flex;
+    width: 267px;
+    margin-left: 50px;
+    margin-top: 40px;
+}
+
+#imgPlcHolder {
+    display: flex;
+    width: 267px;
+    height: 150px;
+    background: $lt-grey;
+    color: ivory;
+    justify-content: center;
+    align-items: center;
+}

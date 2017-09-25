@@ -44,3 +44,23 @@ body {
 .btn {
   background: #BF3900;
   color: ivory; }
+
+#cardGroup {
+  margin-left: 200px;
+  display: inline-flex;
+  flex-wrap: wrap; }
+
+.gameCard {
+  display: flex;
+  width: 267px;
+  margin-left: 50px;
+  margin-top: 40px; }
+
+#imgPlcHolder {
+  display: flex;
+  width: 267px;
+  height: 150px;
+  background: #494C4E;
+  color: ivory;
+  justify-content: center;
+  align-items: center; }
