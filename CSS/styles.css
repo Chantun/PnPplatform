@@ -2,23 +2,45 @@ body {
   padding: 0px;
   z-index: 0; }
 
+/*Sm and xs screens:*/
 @media (max-width: 540px) {
   .smCollapse {
     text-align: center;
-    padding-bottom: 20px; } }
+    padding-bottom: 20px; }
+  .ui {
+    display: none; }
+  a {
+    color: ivory; }
+  a:hover {
+    color: #BF3900; }
+  .active {
+    background: #494C4E; } }
 
+/*Lg to xl screens:*/
 @media (min-width: 540px) {
   .ui {
     position: absolute;
     background: #292B2C;
     color: ivory;
     text-align: center;
-    width: 150px;
-    height: 100%; }
+    width: 200px;
+    height: 100%;
+    padding-top: 5px;
+    border-top: 1px dashed #494C4E; }
     .ui .ui-item {
-      padding-top: 5px; }
+      margin: 5px; }
   .smCollapse {
-    display: none; } }
+    display: none; }
+  a {
+    color: ivory; }
+  a:hover {
+    color: #BF3900; }
+  .active {
+    background: #494C4E; } }
 
-a {
+.orange {
+  color: #BF3900; }
+
+.btn {
+  background: #BF3900;
   color: ivory; }
