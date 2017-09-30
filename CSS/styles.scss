@@ -1,6 +1,8 @@
 $grey: #292B2C;
 $lt-grey: #494C4E;
 $orange: #BF3900;
+$blueFace: #3B5998;
+$redPlus: #dd4b39;
 $breakpoint: 540px;
 
 body {
@@ -39,20 +41,19 @@ body {
 
     @include link();
 
-    #cardGroup {
-        position: absolute;
-        margin: auto;
-        display: inline-flex;
+    .cardgroup-row {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
         height: 100%;
-        flex-wrap: wrap;
         overflow: auto;
+        margin: 40px auto 40px 0px;
     }
 
     .gameCard {
         display: flex;
         width: 250px;
-        margin: auto;
-        margin-top: 40px;
+        margin-left: 40px;
         border-color: $orange;
     }
 
@@ -84,13 +85,20 @@ body {
 
     @include link();
 
-    #cardGroup {
+    .cardGroup {
         position: absolute;
         margin-left: 200px;
-        display: inline-flex;
+        display: block;
         height: 100%;
-        flex-wrap: wrap;
         overflow: auto;
+        flex-direction: column;        
+    }
+
+    .cardgroup-row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; 
+        margin-bottom: 50px;
     }
 
     .gameCard {
@@ -103,7 +111,12 @@ body {
     
 }
 
-
+.cardgroup-title {
+    display: block;
+    color: ivory;
+    background-color: $orange;     
+    padding: 10px;
+}
 
 .orange {
     color: $orange;
@@ -112,7 +125,6 @@ body {
 .btn {
     background: $orange;
     color: ivory;
-    
 }
 
 /*This is a div holding the space for the image, on final version it will be an img*/
@@ -138,14 +150,30 @@ body {
     z-index: 1
 }
 
+/*Modal formating*/
+
 .modal {
-   color: ivory;
+    color: $grey;
 
-   .modal-header {
-       background: $grey;
-   }
+    .close {
+        color: ivory;
+    }
 
-   .modal-footer {
-       background: $lt-grey;
-   }
+    .modal-header {
+        color: ivory;
+        background: $grey;
+    }
+
+    .modal-footer {
+        color: ivory;
+        background: $lt-grey;
+    }
+}
+
+.face {
+    background-color: $blueFace;
+}
+
+.plus {
+    background-color: $redPlus;
 }
