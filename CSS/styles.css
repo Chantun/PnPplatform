@@ -2,9 +2,12 @@ body {
   padding: 0px;
   z-index: 0; }
 
+html {
+  height: 100%; }
+
 /*A mixin to style the links*/
 /* Media query Sm and xs screens:*/
-@media (max-width: 540px) {
+@media (max-width: 768px) {
   .smCollapse {
     text-align: center;
     padding-bottom: 20px; }
@@ -27,10 +30,37 @@ body {
     display: flex;
     width: 250px;
     margin-left: 40px;
-    border-color: #BF3900; } }
+    border-color: #BF3900; }
+  /*Carousel formating*/
+  #gameImgs {
+    position: relative;
+    display: flex;
+    color: ivory;
+    font-size: 40px; }
+  .carousel-item {
+    height: 500px; }
+    .carousel-item img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-height: 500px;
+      padding-left: 25%;
+      padding-top: 200px; }
+  /* Content formating */
+  #content {
+    margin-top: 10px;
+    padding: 50px;
+    padding: 30px;
+    position: relative;
+    height: 250px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center; } }
 
 /*Media query Lg to xl screens:*/
-@media (min-width: 540px) {
+@media (min-width: 768px) {
   .ui {
     position: absolute;
     background: #292B2C;
@@ -67,7 +97,34 @@ body {
     width: 250px;
     margin-left: 40px;
     margin-top: 40px;
-    border-color: #BF3900; } }
+    border-color: #BF3900; }
+  /*Carousel formating*/
+  #gameImgs {
+    position: relative;
+    display: flex;
+    margin-left: 200px;
+    color: ivory;
+    font-size: 50px; }
+  .carousel-item {
+    height: 500px; }
+    .carousel-item img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-height: 500px;
+      padding-left: 42%;
+      padding-top: 15%; }
+  /* Content formating */
+  #content {
+    margin-top: 10px;
+    position: relative;
+    height: 250px;
+    width: 85%;
+    display: flex;
+    margin-left: 200px;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center; } }
 
 .cardgroup-title {
   display: block;
